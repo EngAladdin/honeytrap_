@@ -1,0 +1,16 @@
+# Honeytrap Level-3 config (high-interaction)
+[honeytrap]
+  [honeytrap.listener.socket]
+    type = "socket"
+
+  [honeytrap.service.ssh]
+    type = "ssh"
+    port = "tcp/22"
+
+  [honeytrap.service.http]
+    type = "http"
+    port = "tcp/80"
+
+  [honeytrap.pushers.file]
+    type = "file"
+    filename = "/var/log/honeytrap/events.jsonl"
